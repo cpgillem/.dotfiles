@@ -1,13 +1,11 @@
 # ~/.bashrc: executed by bash(1) for non-login shells.
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
-
 # If not running interactively, don't do anything
 case $- in
     *i*) ;;
       *) return;;
 esac
-
 # don't put duplicate lines or lines starting with space in the history.
 # See bash(1) for more options
 HISTCONTROL=ignoreboth
@@ -122,3 +120,7 @@ alias flayground="ssh cpg@104.131.162.180"
 # Program aliases
 alias subl="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
 alias tree="ls -Rla"
+
+# Use this repo's vimrc without deleting the user's
+vim -e -s -i NONE -c VundleUpdate -c quitall
+alias vim="/usr/bin/vim -u ~/.dotfiles/.vimrc"
