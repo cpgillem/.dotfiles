@@ -17,5 +17,8 @@ alias tree="ls -Rla"
 vim -e -s -i NONE -c VundleUpdate -c quitall
 alias vim="vim -u ~/.dotfiles/.vimrc"
 
-# Use this repo's .tmux.conf in a similar way
-alias tmux="tmux -f ~/.dotfiles/.tmux.conf"
+# If the user has a tmux conf already, source that. That conf should then source this repo's conf.
+if ! [ -e ~/.tmux.conf ]; then
+    alias tmux="tmux -f ~/.dotfiles/.tmux.conf"
+fi
+
