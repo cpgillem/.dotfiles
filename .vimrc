@@ -13,7 +13,6 @@ filetype plugin indent on
 
 syntax on
 set number
-set expandtab
 set tabstop=4
 
 " Open a nerdtree on startup with no files
