@@ -22,3 +22,9 @@ if ! [ -e ~/.tmux.conf ]; then
     alias tmux="tmux -f ~/.dotfiles/.tmux.conf"
 fi
 
+# Attach to tmux in new terminal window
+tmux attach &> /dev/null
+
+if [[ ! $TERM =~ screen ]]; then 
+	exec tmux
+fi
