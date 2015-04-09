@@ -23,8 +23,8 @@ if ! [ -e ~/.tmux.conf ]; then
 fi
 
 # Attach to tmux in new terminal window
-tmux attach &> /dev/null
+# tmux attach &> /dev/null
 
-if [[ ! $TERM =~ screen ]]; then 
-	exec tmux
-fi
+# if [[ ! $TERM =~ screen ]]; then 
+# 	exec tmux
+# fi
