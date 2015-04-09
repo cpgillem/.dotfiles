@@ -7,7 +7,7 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'kien/ctrlp.vim'
-Plugin 'christoomey/vim-tmux-navigator'
+" Plugin 'christoomey/vim-tmux-navigator'
 
 call vundle#end()
 
