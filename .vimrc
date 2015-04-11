@@ -11,9 +11,13 @@ Plugin 'kien/ctrlp.vim'
 
 call vundle#end()
 
+" Automatic settings
 syntax on
+
+" Basic custom settings
 set number
-set tabstop=4
+set tabstop=4 shiftwidth=4 expandtab
+set colorcolumn=80
 
 " Open a nerdtree on startup with no files
 autocmd StdinReadPre * let s:std_in=1
