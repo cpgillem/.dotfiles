@@ -1,6 +1,3 @@
-# Some defaults
-export VISUAL=vim
-export EDITOR="$VISUAL"
 
 # Install vim's plugins.
 vim -e -s -i NONE -c VundleUpdate -c quitall

@@ -4,7 +4,7 @@ alias la='ls -A'
 alias l='ls -CF'
 
 # SSH Convenience Aliases
-alias cclub="ssh cpgsquared@yakko.cs.wmich.edu -t 'tmux attach -d'"
+alias cclub="ssh cpg@yakko.cs.wmich.edu -t 'tmux attach -d'"
 alias home="ssh leona.cadegillem.me"
 alias cade="ssh cadegillem.me"
  
@@ -26,3 +26,6 @@ fi
 # if [[ ! $TERM =~ screen ]]; then 
 # 	exec tmux
 # fi
+
+# Joke aliases
+alias "git rekt"="git rm"
