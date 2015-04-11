@@ -1,3 +1,7 @@
+# Some defaults
+export VISUAL=vim
+export EDITOR="$VISUAL"
+
 # Ubuntu's useful ls aliases
 alias ll='ls -alF'
 alias la='ls -A'
