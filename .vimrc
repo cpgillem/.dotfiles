@@ -2,6 +2,10 @@ set nocompatible
 filetype off 
 set rtp+=~/.dotfiles/Vundle.vim
 
+" Automatic settings
+syntax on
+filetype plugin indent on
+
 call vundle#begin()
 
 Plugin 'gmarik/Vundle.vim'
@@ -11,12 +15,8 @@ Plugin 'kien/ctrlp.vim'
 
 call vundle#end()
 
-" Automatic settings
-syntax on
-
 " Basic custom settings
 set number
-set tabstop=4 shiftwidth=4 expandtab
 set colorcolumn=80
 
 " Open a nerdtree on startup with no files
