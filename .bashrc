@@ -31,5 +31,3 @@ fi
 # 	exec tmux
 # fi
 
-# Joke aliases
-alias "git rekt"="git rm"
