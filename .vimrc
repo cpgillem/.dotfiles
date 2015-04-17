@@ -2,10 +2,6 @@ set nocompatible
 filetype off 
 set rtp+=~/.dotfiles/Vundle.vim
 
-" Automatic settings
-syntax on
-filetype plugin indent on
-
 call vundle#begin()
 
 Plugin 'gmarik/Vundle.vim'
@@ -14,6 +10,11 @@ Plugin 'kien/ctrlp.vim'
 " Plugin 'christoomey/vim-tmux-navigator'
 
 call vundle#end()
+
+" Automatic settings
+filetype plugin indent on
+filetype on
+syntax on
 
 " Basic custom settings
 set number
