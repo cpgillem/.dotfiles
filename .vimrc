@@ -3,6 +3,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'scrooloose/NERDTree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'kien/ctrlp.vim'
+Plug 'airblade/vim-gitgutter'
 
 call plug#end()
 
