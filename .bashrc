@@ -16,18 +16,5 @@ alias cade="ssh cadegillem.me"
 alias subl="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
 alias tree="ls -Rla"
 
-# Use this repo's vimrc without deleting the user's
-alias vim="vim -u ~/.dotfiles/.vimrc"
-
-# If the user has a tmux conf already, source that. That conf should then source this repo's conf.
-if ! [ -e ~/.tmux.conf ]; then
-    alias tmux="tmux -f ~/.dotfiles/.tmux.conf"
-fi
-
-# Attach to tmux in new terminal window
-# tmux attach &> /dev/null
-
-# if [[ ! $TERM =~ screen ]]; then 
-# 	exec tmux
-# fi
-
+# hehe
+alias please=sudo
