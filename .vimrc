@@ -14,7 +14,7 @@ syntax on
 
 " Basic custom settings
 set number
-set colorcolumn=80
+set colorcolumn=100
 
 " NERDTree
 map <C-n> :NERDTreeToggle<CR>
