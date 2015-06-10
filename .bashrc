@@ -8,7 +8,7 @@ alias la='ls -A'
 alias l='ls -CF'
 
 # SSH Convenience Aliases
-alias cclub="ssh cpg@yakko.cs.wmich.edu -t 'tmux attach -d'"
+alias cclub="mosh cpg@yakko.cs.wmich.edu -t 'tmux attach -d'"
 alias home="ssh leona.cadegillem.me"
 alias cade="ssh cadegillem.me"
  
