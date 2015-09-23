@@ -6,15 +6,25 @@ I just source the .bashrc file in this repo in my computer's original ~/.bashrc 
 
     source "~/.dotfiles/.bashrc"
     
-Vundle, my vim plugin manager, is a submodule, so it should be updated through recursive cloning or some other means.
+Vim-Plug is what I use for plugins in vim, and that is easily installed from running the first_time.sh script.
 
-    git clone --recursive https://github.com/cpgillem/.dotfiles.git
+    ./first_time.sh
 
 # Bash
-Sourcing the bashrc adds all my bash configuration to the local computer.
+Sourcing the .bashrc adds all my bash configuration to the local computer. Add this to the existing ~/.bashrc:
+
+    source ~/.dotfiles/.bashrc
 
 # Vim
-.bashrc aliases vim so it starts with the custom .vimrc so there is no need to overwrite the local one.
+Sourcing the .vimrc in the existing .vimrc will configure vim.
 
-## Vundle
-The .bashrc automatically updates Vundle's plugins whenever it's sourced. Everything else is done through the .vimrc and Vundle itself.
+    so ~/.dotfiles/.vimrc
+    
+# Tmux
+
+    source ~/.dotfiles/.tmux.conf
+
+# Linking
+Symbolic linking is an alternative to sourcing these dotfiles when no customization is desired.
+
+    ln -s ~/.dotfiles/.vimrc ~/.vimrc
