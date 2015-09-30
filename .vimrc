@@ -1,7 +1,8 @@
 " Basic Settings
 
 set shell=bash
-filetype plugin indent off
+filetype plugin indent on
+set number
 
 " Plugins Through VimPlug
 
@@ -9,6 +10,8 @@ call plug#begin('~/.vim/plugged')
 
 " Productivity
 Plug 'scrooloose/nerdtree'
+Plug 'Xuyuanp/nerdtree-git-plugin'
+
 Plug 'scrooloose/syntastic'
 Plug 'kien/ctrlp.vim'
 
@@ -24,7 +27,6 @@ Plug 'dag/vim-fish'
 
 " Customization
 Plug 'flazz/vim-colorschemes'
-Plug 'bling/vim-airline'
 
 call plug#end()
 
@@ -53,7 +55,7 @@ let syntastic_mode_map = { 'passive_filetypes': ['html'] }
 autocmd FileType go autocmd BufWritePre <buffer> Fmt
 
 " Airline Settings
-set laststatus=2
+" set laststatus=2
 
 " DEPRECATED 
 " set tabstop=4 shiftwidth=4 expandtab
