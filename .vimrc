@@ -62,3 +62,7 @@ set laststatus=2
 
 filetype plugin indent on
 syntax on
+
+" Customizations
+
+colorscheme molokai

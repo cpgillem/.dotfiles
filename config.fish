@@ -8,4 +8,4 @@ set -gx PATH $GOPATH/bin $PATH
 set -U EDITOR vim
 
 # Colors
-# set -gx TERM screen-256color
+set -gx TERM screen-256color
