@@ -7,13 +7,24 @@ filetype plugin indent off
 
 call plug#begin('~/.vim/plugged')
 
+" Productivity
 Plug 'scrooloose/nerdtree'
 Plug 'scrooloose/syntastic'
 Plug 'kien/ctrlp.vim'
+
+Plug 'tpope/vim-repeat'
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-fugitive'
+
+" Languages
 Plug 'fatih/vim-go'
-Plug 'rjohnsondev/vim-compiler-go'
 Plug 'vim-jp/vim-go-extra'
 Plug 'dgryski/vim-godef'
+Plug 'dag/vim-fish'
+
+" Customization
+Plug 'flazz/vim-colorschemes'
+Plug 'bling/vim-airline'
 
 call plug#end()
 
@@ -38,8 +49,11 @@ let syntastic_mode_map = { 'passive_filetypes': ['html'] }
 
 " Vim-Go-Extra Settings
 
-" Format on every save.
+" " Format on every save.
 autocmd FileType go autocmd BufWritePre <buffer> Fmt
+
+" Airline Settings
+set laststatus=2
 
 " DEPRECATED 
 " set tabstop=4 shiftwidth=4 expandtab
