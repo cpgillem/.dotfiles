@@ -3,6 +3,7 @@
 set shell=bash
 filetype plugin indent on
 set number
+set colorcolumn=100
 
 " Plugins Through VimPlug
 
@@ -23,7 +24,10 @@ Plug 'tpope/vim-fugitive'
 Plug 'fatih/vim-go'
 Plug 'vim-jp/vim-go-extra'
 Plug 'dgryski/vim-godef'
+
 Plug 'dag/vim-fish'
+
+Plug 'fs111/pydoc.vim'
 
 " Customization
 Plug 'flazz/vim-colorschemes'
@@ -53,6 +57,9 @@ let syntastic_mode_map = { 'passive_filetypes': ['html'] }
 
 " " Format on every save.
 autocmd FileType go autocmd BufWritePre <buffer> Fmt
+
+" Pydoc Settings
+" let g:pydoc_open_cmd='vsplit'
 
 " Airline Settings
 " set laststatus=2
