@@ -1,9 +1,14 @@
 " Basic Settings
 
+syntax on
 set shell=bash
-filetype plugin indent on
 set number
 set colorcolumn=100
+set modeline
+
+" Saving view automatically
+autocmd BufWinLeave *.* mkview
+autocmd BufWinEnter *.* silent loadview
 
 " Plugins Through VimPlug
 
@@ -24,8 +29,6 @@ Plug 'tpope/vim-fugitive'
 Plug 'fatih/vim-go'
 Plug 'vim-jp/vim-go-extra'
 Plug 'dgryski/vim-godef'
-
-Plug 'dag/vim-fish'
 
 Plug 'fs111/pydoc.vim'
 
@@ -67,11 +70,17 @@ autocmd FileType go autocmd BufWritePre <buffer> Fmt
 " DEPRECATED 
 " set tabstop=4 shiftwidth=4 expandtab
 
-" General Settings
-
-filetype plugin indent on
-syntax on
-
 " Customizations
+" colorscheme molokai
 
-colorscheme molokai
+" File Types
+filetype indent on
+
+autocmd Filetype html setlocal       ts=2 sts=2 sw=2 expandtab
+autocmd Filetype php setlocal        ts=2 sts=2 sw=2 expandtab
+autocmd Filetype javascript setlocal ts=4 sts=4 sw=4 noexpandtab
+autocmd Filetype ruby setlocal       ts=2 sts=2 sw=2 expandtab
+
+" Project-specific .vimrc files
+set exrc
+set secure
