@@ -5,10 +5,12 @@ set shell=bash
 set number
 set colorcolumn=100
 set modeline
+set relativenumber
+map Q <nop>
 
 " Saving view automatically
-autocmd BufWinLeave *.* mkview
-autocmd BufWinEnter *.* silent loadview
+" autocmd BufWinLeave *.* mkview
+" autocmd BufWinEnter *.* silent loadview
 
 " Plugins Through VimPlug
 
@@ -29,6 +31,9 @@ Plug 'tpope/vim-fugitive'
 Plug 'fatih/vim-go'
 Plug 'vim-jp/vim-go-extra'
 Plug 'dgryski/vim-godef'
+
+" Other
+Plug 'jwalton512/vim-blade'
 
 Plug 'fs111/pydoc.vim'
 
@@ -59,7 +64,7 @@ let syntastic_mode_map = { 'passive_filetypes': ['html'] }
 " Vim-Go-Extra Settings
 
 " " Format on every save.
-autocmd FileType go autocmd BufWritePre <buffer> Fmt
+" autocmd FileType go autocmd BufWritePre <buffer> Fmt
 
 " Pydoc Settings
 " let g:pydoc_open_cmd='vsplit'
@@ -77,9 +82,13 @@ autocmd FileType go autocmd BufWritePre <buffer> Fmt
 filetype indent on
 
 autocmd Filetype html setlocal       ts=2 sts=2 sw=2 expandtab
+autocmd Filetype htmldjango setlocal ts=2 sts=2 sw=2 expandtab
 autocmd Filetype php setlocal        ts=2 sts=2 sw=2 expandtab
 autocmd Filetype javascript setlocal ts=4 sts=4 sw=4 noexpandtab
 autocmd Filetype ruby setlocal       ts=2 sts=2 sw=2 expandtab
+autocmd Filetype md setlocal         ft=markdown
+autocmd Filetype gitcommit setlocal  colorcolumn=80
+autocmd Filetype go setlocal         ts=4 sts=4 sw=4 noexpandtab colorcolumn=0
 
 " Project-specific .vimrc files
 set exrc
