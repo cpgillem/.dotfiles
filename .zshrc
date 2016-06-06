@@ -1,4 +1,20 @@
 export PROMPT="%{$fg[red]%}%n%{$reset_color%}@%{$fg[blue]%}%m %{$fg_no_bold[yellow]%}%1 [%1d] %{$reset_color%}%"
 export RPROMPT="[%{$fg_no_bold[yellow]%}%?%{$reset_color%}]"
 
-source ~/.dotfiles/.bashrc
+# Some defaults
+export VISUAL=vim
+export EDITOR="$VISUAL"
+
+# Make tmux Great Again
+alias tmux="tmux -2"
+
+# Ubuntu's useful ls aliases
+alias ll='ls -alF'
+alias la='ls -A'
+alias l='ls -CF'
+
+# SSH Convenience Aliases
+alias yakko="ssh cpg@yakko.cs.wmich.edu -t 'tmux attach -d'"
+ 
+# Program aliases
+alias tree="ls -Rla"
