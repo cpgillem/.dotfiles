@@ -13,8 +13,6 @@ Plug 'tpope/vim-sensible'
 " Productivity
 Plug 'kien/ctrlp.vim'
 Plug 'scrooloose/syntastic'
-Plug 'SirVer/ultisnips'
-Plug 'honza/vim-snippets'
 
 " Editing
 Plug 'tpope/vim-repeat'
@@ -40,12 +38,6 @@ Plug 'flazz/vim-colorschemes'
 " Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 
 call plug#end()
-
-" UltiSnips config
-let g:UltiSnipsExpandTrigger="<tab>"
-let g:UltiSnipsJumpForwardTrigger="<c-b>"
-let g:UltiSnipsJumpBackwardTrigger="<c-z>"
-let g:UltiSnipsEditSplit="vertical"
 
 " END PLUGINS
 
