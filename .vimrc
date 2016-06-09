@@ -11,10 +11,10 @@ call plug#begin('~/.vim/plugged')
 Plug 'tpope/vim-sensible'
 
 " Productivity
-Plug 'kien/ctrlp.vim'
 Plug 'scrooloose/syntastic'
-Plug 'SirVer/ultisnips'
-Plug 'honza/vim-snippets'
+Plug 'scrooloose/nerdtree'
+Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'kien/ctrlp.vim'
 
 " Editing
 Plug 'tpope/vim-repeat'
@@ -34,20 +34,10 @@ Plug 'flazz/vim-colorschemes'
 
 " PLUGIN JAIL
 
-" Plug 'scrooloose/nerdtree'
-" Plug 'Xuyuanp/nerdtree-git-plugin'
 " Plug 'Valloric/YouCompleteMe', { 'do': './install.py' }
 " Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 
 call plug#end()
-
-" UltiSnips config
-let g:UltiSnipsExpandTrigger="<tab>"
-let g:UltiSnipsListSnippets="<c-s>"
-let g:UltiSnipsJumpForwardTrigger="<c-b>"
-let g:UltiSnipsJumpBackwardTrigger="<c-z>"
-
-let g:UltiSnipsEditSplit="vertical"
 
 " END PLUGINS
 
@@ -79,7 +69,7 @@ noremap <C-v> :r !pbpaste<CR><CR>
 imap jj <esc>
 
 " Map Ctrl+N to open the file explorer
-map <C-n> :Explore<CR>
+map <C-n> :NERDTreeToggle<CR>
 
 " Syntastic Settings
 
