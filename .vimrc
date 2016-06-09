@@ -43,8 +43,10 @@ call plug#end()
 
 " UltiSnips config
 let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsListSnippets="<c-s>"
 let g:UltiSnipsJumpForwardTrigger="<c-b>"
 let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+
 let g:UltiSnipsEditSplit="vertical"
 
 " END PLUGINS
