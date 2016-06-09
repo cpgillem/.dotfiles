@@ -11,8 +11,10 @@ call plug#begin('~/.vim/plugged')
 Plug 'tpope/vim-sensible'
 
 " Productivity
-Plug 'kien/ctrlp.vim'
 Plug 'scrooloose/syntastic'
+Plug 'scrooloose/nerdtree'
+Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'kien/ctrlp.vim'
 
 " Editing
 Plug 'tpope/vim-repeat'
@@ -32,8 +34,6 @@ Plug 'flazz/vim-colorschemes'
 
 " PLUGIN JAIL
 
-" Plug 'scrooloose/nerdtree'
-" Plug 'Xuyuanp/nerdtree-git-plugin'
 " Plug 'Valloric/YouCompleteMe', { 'do': './install.py' }
 " Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 
@@ -69,7 +69,7 @@ noremap <C-v> :r !pbpaste<CR><CR>
 imap jj <esc>
 
 " Map Ctrl+N to open the file explorer
-map <C-n> :Explore<CR>
+map <C-n> :NERDTreeToggle<CR>
 
 " Syntastic Settings
 
