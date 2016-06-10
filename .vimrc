@@ -51,7 +51,8 @@ map Q <nop>
 " Visual Helpers
 set t_Co=256
 set number
-autocmd BufEnter * set relativenumber
+map <F5> :set paste!<CR>
+map <F6> :set relativenumber!<CR>
 set cursorline
 set colorcolumn=100
 
@@ -89,7 +90,7 @@ let syntastic_mode_map = { 'passive_filetypes': ['html'] }
 colorscheme molokai
 
 " No autocommenting, it's annoying
-autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
+" autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 
 " File Types
 autocmd Filetype html setlocal       ts=2 sts=2 sw=2 expandtab
