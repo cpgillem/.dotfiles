@@ -54,7 +54,7 @@ set number
 map <F5> :set paste!<CR>
 map <F6> :set relativenumber!<CR>
 set cursorline
-set colorcolumn=100
+set colorcolumn=80
 
 " Soft line navigating, except when using counts
 " source: https://www.reddit.com/r/vim/comments/2k4cbr/problem_with_gj_and_gk/
@@ -68,6 +68,7 @@ noremap <C-v> :r !pbpaste<CR><CR>
 
 " Quick escape
 imap jj <esc>
+imap <C-j> <esc>
 
 " Map Ctrl+N to open the file explorer
 map <C-n> :NERDTreeToggle<CR>
@@ -97,6 +98,7 @@ autocmd Filetype html setlocal       ts=2 sts=2 sw=2 expandtab
 autocmd Filetype htmldjango setlocal ts=2 sts=2 sw=2 expandtab
 autocmd Filetype php setlocal        ts=2 sts=2 sw=2 expandtab
 autocmd Filetype javascript setlocal ts=4 sts=4 sw=4 noexpandtab
+autocmd Filetype json setlocal       ts=4 sts=4 sw=4 noexpandtab
 autocmd Filetype ruby setlocal       ts=4 sts=4 sw=4 expandtab
 autocmd Filetype md setlocal         ft=markdown
 autocmd Filetype gitcommit setlocal  colorcolumn=80
