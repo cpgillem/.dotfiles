@@ -18,3 +18,9 @@ alias yakko="ssh cpg@yakko.cs.wmich.edu -t 'tmux attach -d'"
  
 # Program aliases
 alias tree="ls -Rla"
+
+# Git Shortcuts because the laziness knows no bounds
+alias gs='git status'
+alias gc='git commit'
+alias ga='git add'
+alias gd='git diff'
