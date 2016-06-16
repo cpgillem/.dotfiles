@@ -15,6 +15,7 @@ Plug 'scrooloose/syntastic'
 Plug 'scrooloose/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'kien/ctrlp.vim'
+Plug 'vim-airline/vim-airline'
 
 " Editing
 Plug 'tpope/vim-repeat'
@@ -28,6 +29,8 @@ Plug 'vim-jp/vim-go-extra'
 Plug 'dgryski/vim-godef'
 Plug 'jwalton512/vim-blade'
 Plug 'fs111/pydoc.vim'
+Plug 'digitaltoad/vim-pug'
+Plug 'kchmck/vim-coffee-script'
 
 " Cosmetics
 Plug 'flazz/vim-colorschemes'
@@ -43,6 +46,7 @@ call plug#end()
 
 " Essential Settings
 set shell=bash
+set modeline
 
 " Convenience Settings
 set mouse=a
@@ -65,10 +69,6 @@ nnoremap <expr> j v:count == 0 ? 'gj' : 'j'
 " source: http://stackoverflow.com/questions/3961859/how-to-copy-to-clipboard-in-vim
 vnoremap <C-c> :w !pbcopy<CR><CR>
 noremap <C-v> :r !pbpaste<CR><CR>
-
-" Quick escape
-imap jj <esc>
-imap <C-j> <esc>
 
 " Map Ctrl+N to open the file explorer
 map <C-n> :NERDTreeToggle<CR>
@@ -97,12 +97,13 @@ colorscheme molokai
 autocmd Filetype html setlocal       ts=2 sts=2 sw=2 expandtab
 autocmd Filetype htmldjango setlocal ts=2 sts=2 sw=2 expandtab
 autocmd Filetype php setlocal        ts=2 sts=2 sw=2 expandtab
-autocmd Filetype javascript setlocal ts=4 sts=4 sw=4 noexpandtab
-autocmd Filetype json setlocal       ts=4 sts=4 sw=4 noexpandtab
+autocmd Filetype javascript setlocal ts=2 sts=2 sw=2 expandtab
+autocmd Filetype json setlocal       ts=2 sts=2 sw=2 expandtab
 autocmd Filetype ruby setlocal       ts=4 sts=4 sw=4 expandtab
 autocmd Filetype md setlocal         ft=markdown
 autocmd Filetype gitcommit setlocal  colorcolumn=80
 autocmd Filetype go setlocal         ts=4 sts=4 sw=4 noexpandtab colorcolumn=0
+autocmd Filetype pug setlocal        ts=2 sts=2 sw=2 expandtab
 
 " Project-specific .vimrc files
 set exrc
