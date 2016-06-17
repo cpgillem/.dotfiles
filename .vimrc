@@ -60,6 +60,9 @@ map <F6> :set relativenumber!<CR>
 set cursorline
 set colorcolumn=80
 
+" ~ A E S T H E T I C S ~
+let g:airline_powerline_fonts = 1
+
 " Soft line navigating, except when using counts
 " source: https://www.reddit.com/r/vim/comments/2k4cbr/problem_with_gj_and_gk/
 nnoremap <expr> k v:count == 0 ? 'gk' : 'k'
