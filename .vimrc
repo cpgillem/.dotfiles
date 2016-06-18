@@ -11,11 +11,12 @@ call plug#begin('~/.vim/plugged')
 Plug 'tpope/vim-sensible'
 
 " Productivity
-Plug 'scrooloose/syntastic'
 Plug 'scrooloose/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'kien/ctrlp.vim'
 Plug 'vim-airline/vim-airline'
+Plug 'scrooloose/syntastic'
+Plug 'airblade/vim-gitgutter'
 
 " Editing
 Plug 'tpope/vim-repeat'
