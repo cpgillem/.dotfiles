@@ -71,8 +71,8 @@ nnoremap <expr> j v:count == 0 ? 'gj' : 'j'
 
 " Real Copying and Pasting
 " source: http://stackoverflow.com/questions/3961859/how-to-copy-to-clipboard-in-vim
-vnoremap <C-c> :w !pbcopy<CR><CR>
-noremap <C-v> :r !pbpaste<CR><CR>
+" vnoremap <C-c> :w !pbcopy<CR><CR>
+" noremap <C-v> :r !pbpaste<CR><CR>
 
 " Map Ctrl+N to open the file explorer
 map <C-n> :NERDTreeToggle<CR>
