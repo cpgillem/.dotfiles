@@ -56,7 +56,7 @@ map Q <nop>
 " Visual Helpers
 set t_Co=256
 set number
-map <F5> :set paste!<CR>
+set pastetoggle=<f5>
 map <F6> :set relativenumber!<CR>
 set cursorline
 set colorcolumn=80
