@@ -7,24 +7,24 @@ filetype indent on
 " Plugins Through VimPlug
 call plug#begin('~/.vim/plugged')
 
-" Basics
-Plug 'tpope/vim-sensible'
-
-" Productivity
+" Major Expansions
 Plug 'scrooloose/nerdtree'
-Plug 'Xuyuanp/nerdtree-git-plugin'
-Plug 'kien/ctrlp.vim'
 Plug 'vim-airline/vim-airline'
 Plug 'scrooloose/syntastic'
-Plug 'airblade/vim-gitgutter'
 
-" Editing
+" QoL Settings and Editing Expansions
+Plug 'flazz/vim-colorschemes'
+Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-repeat'
-Plug 'tpope/vim-surround'
-Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-capslock'
+Plug 'tpope/vim-surround'
 
-" Languages/Frameworks
+" Git
+Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'airblade/vim-gitgutter'
+Plug 'tpope/vim-fugitive'
+
+" Languages and Frameworks
 Plug 'fatih/vim-go'
 Plug 'vim-jp/vim-go-extra'
 Plug 'dgryski/vim-godef'
@@ -33,12 +33,10 @@ Plug 'fs111/pydoc.vim'
 Plug 'digitaltoad/vim-pug'
 Plug 'kchmck/vim-coffee-script'
 
-" Cosmetics
-Plug 'flazz/vim-colorschemes'
-
 " PLUGIN JAIL
 
 " Plug 'Valloric/YouCompleteMe', { 'do': './install.py' }
+" Plug 'kien/ctrlp.vim'
 " Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 
 call plug#end()
@@ -50,7 +48,7 @@ set shell=bash
 set modeline
 
 " Convenience Settings
-set mouse=a
+" set mouse=a
 map Q <nop>
 
 " Visual Helpers
