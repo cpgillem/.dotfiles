@@ -26,13 +26,17 @@ Plug 'tpope/vim-fugitive'
 
 " Languages and Frameworks
 
-" Plug 'fatih/vim-go'
-" Plug 'vim-jp/vim-go-extra'
-" Plug 'dgryski/vim-godef'
-" Plug 'jwalton512/vim-blade'
-" Plug 'fs111/pydoc.vim'
-" Plug 'digitaltoad/vim-pug'
-" Plug 'kchmck/vim-coffee-script'
+Plug 'fatih/vim-go', {'for': 'go'}
+Plug 'vim-jp/vim-go-extra', {'for': 'go'}
+Plug 'dgryski/vim-godef', {'for': 'go'}
+
+Plug 'jwalton512/vim-blade', {'for': 'php'}
+
+Plug 'fs111/pydoc.vim', {'for': 'python'}
+
+Plug 'digitaltoad/vim-pug', {'for': 'pug'}
+
+Plug 'kchmck/vim-coffee-script', {'for': 'coffeescript'}
 
 " PLUGIN JAIL
 
