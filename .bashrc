@@ -8,10 +8,11 @@ alias la='ls -A'
 alias l='ls -CF'
 
 # SSH Convenience Aliases
-alias cclub="mosh cpg@yakko.cs.wmich.edu -t 'tmux attach -d'"
+alias yakko="ssh cpg@yakko.cs.wmich.edu -t 'tmux attach -d'"
  
 # Program aliases
 alias tree="ls -Rla"
+alias tmux="tmux -2"
 
 # hehe
 alias please=sudo
