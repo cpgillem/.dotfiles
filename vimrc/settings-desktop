@@ -1,0 +1,29 @@
+" ~ A E S T H E T I C S ~
+let g:airline_powerline_fonts = 1
+
+" Map Ctrl+N to open the file explorer
+map <C-n> :NERDTreeToggle<CR>
+
+" Customizations
+colorscheme molokai
+
+" GUI-specific Settings
+if has("gui_running")
+  set guifont=Monaco:h14
+  set lines=40 columns=136
+endif
+
+" Syntastic Settings
+
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+
+" " Disable for HTML because of templates
+let syntastic_mode_map = { 'passive_filetypes': ['html'] }
+
