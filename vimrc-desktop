@@ -1,8 +1,5 @@
 " vim: set ft=vim
 
-" Include the main vimrc
-so ".vimrc"
-
 " Plugins Through VimPlug
 call plug#begin('~/.vim/plugged')
 
