@@ -48,6 +48,8 @@ autocmd Filetype gitcommit setlocal  colorcolumn=80
 autocmd Filetype go setlocal         ts=4 sts=4 sw=4 noexpandtab colorcolumn=0
 autocmd Filetype pug setlocal        ts=2 sts=2 sw=2 expandtab
 
+colorscheme evening
+
 " Project-specific .vimrc files
 set exrc
 set secure

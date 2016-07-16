@@ -33,7 +33,6 @@ call plug#end()
 
 " ~ A E S T H E T I C S ~
 let g:airline_powerline_fonts = 1
-colorscheme evening
 
 " Map Ctrl+N to open the file explorer
 map <C-n> :NERDTreeToggle<CR>
