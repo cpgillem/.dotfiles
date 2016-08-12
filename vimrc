@@ -17,7 +17,7 @@ let mapleader=" "
 
 " Visual Helpers
 set t_Co=256
-set number
+set relativenumber
 map <leader>p :set paste!<CR>
 map <leader>n :set relativenumber!<CR>
 set cursorline
@@ -48,8 +48,6 @@ autocmd Filetype gitcommit setlocal  colorcolumn=80
 autocmd Filetype go setlocal         ts=4 sts=4 sw=4 noexpandtab colorcolumn=0
 autocmd Filetype pug setlocal        ts=2 sts=2 sw=2 expandtab
 
-colorscheme evening
-
 " Project-specific .vimrc files
 set exrc
 set secure
@@ -74,19 +72,21 @@ Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
 
 " Languages and Frameworks
-Plug 'fatih/vim-go', {'for': 'go'}
-Plug 'vim-jp/vim-go-extra', {'for': 'go'}
-Plug 'dgryski/vim-godef', {'for': 'go'}
-Plug 'jwalton512/vim-blade', {'for': 'php'}
-Plug 'fs111/pydoc.vim', {'for': 'python'}
-Plug 'digitaltoad/vim-pug', {'for': 'pug'}
-Plug 'kchmck/vim-coffee-script', {'for': 'coffeescript'}
+Plug 'fatih/vim-go'
+Plug 'vim-jp/vim-go-extra'
+Plug 'dgryski/vim-godef'
+Plug 'jwalton512/vim-blade'
+Plug 'fs111/pydoc.vim'
+Plug 'digitaltoad/vim-pug'
+Plug 'kchmck/vim-coffee-script'
 
 call plug#end()
 " END PLUGINS
 
 " ~ A E S T H E T I C S ~
 let g:airline_powerline_fonts = 1
+
+colorscheme evening
 
 " Map Ctrl+N to open the file explorer
 map <C-n> :NERDTreeToggle<CR>
